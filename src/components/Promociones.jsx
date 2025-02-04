@@ -8,7 +8,7 @@ import promoBuenFin6 from "../assets/promo-nov-6.jpg";
 const Promociones = () => {
   return (
     <div>
-      <div className="promo">
+      <div className="promo" id="promo">
         <div className="title">
           <h2>Promociones</h2>
         </div>
