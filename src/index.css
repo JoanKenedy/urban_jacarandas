@@ -93,19 +93,9 @@ body {
   width: 85%;
   margin: auto;
   padding-bottom: 25px;
+  padding-top: 25px;
 }
 
-.item-ventajas ul li {
-  text-align: justify;
-  color: white;
-}
-.item-ventajas ul li strong {
-  color: white;
-  font-size: 17px;
-}
-.item-ventajas ul li {
-  font-size: 15px;
-}
 .secion-question {
   width: 100%;
   margin: auto;
@@ -140,6 +130,58 @@ body {
 .item-galery-trabajo img {
   max-width: 100%;
 }
+.btn-contact {
+  background-color: #25d366;
+  color: white;
+  width: 170px;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.promo-implantes {
+  width: 100%;
+  padding: 15px 0px;
+}
+.promo-implantes h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.promos-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+  width: 90%;
+  margin: auto;
+}
+.promos-section a img {
+  max-width: 100%;
+}
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-title {
+  font-weight: 400;
+  color: white;
+}
+.faq-title strong {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.faq-answer {
+  margin-top: 5px;
+  padding-left: 0px;
+  font-size: 15px;
+  text-align: justify;
+  color: white;
+}
+.faq-title {
+  cursor: pointer;
+}
 
 @media (min-width: 767px) {
   .slider-cel {
@@ -161,11 +203,11 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    gap: 40px;
     padding: 40px 0px;
   }
   .item-about-2 img {
-    width: 500px;
+    width: 600px;
     height: 500px;
     object-fit: cover;
   }
@@ -205,24 +247,13 @@ body {
     text-align: center;
     font-size: 17px;
   }
-  .container-ventajas-implantes {
-    width: 80%;
+  .container-ventajas-implantes .item-ventajas {
+    width: 65%;
     margin: auto;
     padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-  }
-  .item-ventajas ul li strong {
-    color: white;
-    font-size: 20px;
-  }
-  .item-ventajas ul li {
-    font-size: 16px;
-    margin: 12px auto;
-  }
-  .item-ventajas ul li::marker {
-    font-size: 25px;
   }
 
   .container-question {
@@ -263,5 +294,77 @@ body {
   .item-galery-trabajo img:hover {
     transform: scale(0.9);
     transition: all 1s ease-in;
+  }
+  .btn-contact {
+    background-color: #25d366;
+    color: white;
+    width: 220px;
+    text-align: center;
+    padding: 12px 7px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.7s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+  .btn-contact:hover {
+    transform: scale(0.9);
+    transition: all 0.7s;
+  }
+  .icon-whats {
+    font-size: 25px;
+  }
+  .promo-implantes {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .promo-implantes h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .promos-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    width: 80%;
+    margin: auto;
+  }
+  .promos-section a img {
+    max-width: 90%;
+    transition: all 0.7s;
+  }
+  .promos-section a img:hover {
+    box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: all 0.7s;
+  }
+  .faq-item {
+    margin-bottom: 0px;
+  }
+
+  .faq-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+  }
+  .faq-title strong {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+
+  .faq-answer {
+    margin-top: 5px;
+    padding-left: 0px;
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+  }
+  .faq-title {
+    cursor: pointer;
   }
 }

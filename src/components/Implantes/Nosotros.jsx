@@ -1,27 +1,34 @@
 import React from "react";
-import Foto from "../../assets/implantologo.jpg";
+import Foto from "../../assets/sonrisa.jpg";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Nosotros = () => {
   return (
     <div className="about2">
       <div className="container-about-2">
         <div className="item-about-2">
-          <h2>Implantología Dental: Ciencia al Servicio de Tu Sonrisa</h2>
+          <h2>Implantología Dental</h2>
           <p>
             La implantología dental representa uno de los mayores avances en la
             odontología moderna, combinando ciencia, tecnología y arte para
             devolver la función y estética perdidas. Los implantes dentales no
             solo permiten reemplazar dientes ausentes, sino que también
-            restauran la confianza y calidad de vida de los pacientes. <br />{" "}
-            Gracias a innovaciones como la planificación digital, los
-            diagnósticos precisos y las técnicas mínimamente invasivas, la
-            implantología se ha convertido en una opción segura y accesible para
-            millones de personas en todo el mundo. Es más que un procedimiento
-            médico; es una oportunidad para recuperar algo tan esencial como una
-            sonrisa funcional y saludable. En definitiva, la implantología
-            dental pone la ciencia al servicio de lo más valioso: tu bienestar y
-            confianza.
+            restauran la confianza y calidad de vida de los pacientes.
           </p>
+          <p>
+            Si perdiste una o más piezas dentales acude a Urban Sonrie para
+            realizarte una Valoración a detalle y conocer la forma más eficaz de
+            devolverte la confianza en tu sonrisa.
+          </p>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=525529484701"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-contact"
+          >
+            <IoLogoWhatsapp className="icon-whats" /> Agenda tu cita
+          </a>
         </div>
         <div className="item-about-2">
           <img src={Foto} alt="" className="" />
